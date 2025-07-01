@@ -1,0 +1,116 @@
+@import url('reset.css');
+
+* {
+    font-family: "Press Start 2P", cursive, system-ui;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000;
+    color: #f00;
+    width: 100%;
+    height: 89px;
+    border-bottom: 8px solid #e8c808;
+}
+
+.container-menu {
+    font-size: 1.03rem;
+    color: #fff;
+}
+
+.container-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-menu h2:nth-child(1),
+.container-player h2:nth-child(1) {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+.painel-container {
+    background-image: url("/assets/imagens/wall.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.painel-row {
+    margin: 98px 0;
+}
+
+.painel-column {
+    height: 260px;
+    width: 260px;
+    border: 2px solid #000;
+    background-color: #1aeaa5;
+}
+
+.enemy {
+    background-image: url("/assets/imagens/ralph.png");
+    background-size: cover;
+}
+
+.start-btn {
+    position: fixed; /* Fixa o botão na tela */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o botão */
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: rgba(40, 167, 69, 0.9);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Garante que o botão fique na frente de tudo */
+    transition: background-color 0.3s;
+}
+
+.start-btn:hover {
+    background-color: rgba(33, 136, 56, 0.9);
+}
+
+.hidden {
+    display: none;
+}
+
+#game-over-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 2000;
+}
+
+#game-over-message .restart-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#game-over-message .restart-btn:hover {
+    background-color: #218838;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ri Happy - Frontend</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Font Press Start 2P -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div>
+            <h2>YOUR SCORE:</h2>
+            <div class="container-menu">
+                <h2 id="score">0</h2>
+            </div>
+        </div>
+        <div>
+            <h2>TIME LEFT:</h2>
+            <div class="container-menu">
+                <h2 id="time">0</h2>
+            </div>
+        </div>
+        <div class="container-player">
+            <img src="./assets/imagens/player.png" alt="player">
+            <div class="container-menu">
+                <h2 id="lives">x3</h2>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <!-- Botão para iniciar o jogo -->
+    <button id="start-button" class="start-btn">Iniciar Jogo</button>
+
+    <!-- Botão para reiniciar o jogo -->
+    <div id="game-over-message" class="hidden">
+        <div class="message-content">
+            <p id="final-score">Fim da partida! Sua pontuação: 0</p>
+            <button id="restart-button" class="restart-btn">Reiniciar Jogo</button>
+        </div>
+    </div>
+    <div class="painel-container">
+        <div class="painel-row">
+            <div class="painel-column enemy" id="0"></div>
+            <div class="painel-column" id="1"></div>
+            <div class="painel-column" id="2"></div>
+        </div>
+        <div class="painel-row">
+            <div class="painel-column" id="3"></div>
+            <div class="painel-column" id="4"></div>
+            <div class="painel-column" id="5"></div>
+        </div>
+        <div class="painel-row">
+            <div class="painel-column" id="6"></div>
+            <div class="painel-column" id="7"></div>
+            <div class="painel-column" id="8"></div>
+        </div>
+    </div>
+</main>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
