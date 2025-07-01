@@ -22,7 +22,7 @@ function enemyPosition() {
 }
 
 function playSound(sound) {    
-    const audio = new Audio(`./assets/audios/${sound}`);
+    const audio = new Audio(`../audios/${sound}`);
     audio.volume = 0.4;
     audio.play();
 }
@@ -128,6 +128,7 @@ function listenerHitSquare() {
                 state.values.lives--;
                 state.view.lives.textContent = `x${state.values.lives}`;
                 if (state.values.lives === 0) {
+                    state.view.lives.textContent = `x0`;
                     showGameOverMessage();
                 }
             }
