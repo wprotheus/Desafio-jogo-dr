@@ -22,7 +22,7 @@ function enemyPosition() {
 }
 
 function playSound(sound) {
-    const pathAudio = ("/assets/audios/" + sound);
+    const pathAudio = ("../audios/" + sound);
     const audio = new Audio(pathAudio);
     audio.volume = 0.4;
     audio.play();
