@@ -22,7 +22,8 @@ function enemyPosition() {
 }
 
 function playSound(sound) {
-    const audio = new Audio(`/assets/audios/${sound}`);
+    const pathAudio = ("/assets/audios/" + sound);
+    const audio = new Audio(pathAudio);
     audio.volume = 0.4;
     audio.play();
 }
