@@ -41,7 +41,7 @@ body {
 
 
 .painel-container {
-    background-image: url("/assets/imagens/wall.png");
+    background-image: url("../imagens/wall.png");
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,7 +59,7 @@ body {
 }
 
 .enemy {
-    background-image: url("/assets/imagens/ralph.png");
+    background-image: url("../imagens/ralph.png");
     background-size: cover;
 }
 
