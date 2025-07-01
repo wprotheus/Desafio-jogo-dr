@@ -22,7 +22,8 @@ function enemyPosition() {
 }
 
 function playSound(sound) {    
-    const audio = new Audio(`../audios/${sound}`);
+    const audio = new Audio(`./assets/audios/${sound}`); // assets/audios/hit.m4a
+    console.log(audio);
     audio.volume = 0.4;
     audio.play();
 }
@@ -127,7 +128,7 @@ function listenerHitSquare() {
                 playSound('error.mp3'); // NowTHATSaMFsnare by you_cannot_use_this_username_d -- https://freesound.org/s/733615/ -- License: Creative Commons 0
                 state.values.lives--;
                 state.view.lives.textContent = `x${state.values.lives}`;
-                if (state.values.lives === 0) {
+                if (state.values.lives <= 0) {
                     state.view.lives.textContent = `x0`;
                     showGameOverMessage();
                 }
