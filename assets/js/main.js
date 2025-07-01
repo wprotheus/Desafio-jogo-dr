@@ -21,9 +21,8 @@ function enemyPosition() {
     return Math.floor(Math.random() * state.view.square.length);
 }
 
-function playSound(sound) {
-    const pathAudio = ("../audios/" + sound);
-    const audio = new Audio(pathAudio);
+function playSound(sound) {    
+    const audio = new Audio(`./assets/audios/${sound}`);
     audio.volume = 0.4;
     audio.play();
 }
