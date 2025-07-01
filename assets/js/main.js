@@ -22,8 +22,7 @@ function enemyPosition() {
 }
 
 function playSound(sound) {    
-    const audio = new Audio(`./assets/audios/${sound}`); // assets/audios/hit.m4a
-    console.log(audio);
+    const audio = new Audio(`./assets/audios/${sound}`); 
     audio.volume = 0.4;
     audio.play();
 }
