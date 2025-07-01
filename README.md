@@ -13,7 +13,7 @@ O resultado do desafio é composto pelas alterações e ajustes que achei necess
 
 ---  
 
-#### ***Resultado final do desafio - Jogo Detona Ralph -> [Jogar]()***
+#### ***Resultado final do desafio - Jogo Detona Ralph -> [Jogar](https://wprotheus.github.io/Desafio-jogo-dr/)***
 
 ---
 
